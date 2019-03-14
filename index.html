@@ -5,6 +5,7 @@
 		<title>Paddle Ball</title>
 		
 		<link rel="stylesheet" type="text/css" href="./assets/css/trygame_score.css">
+		<script src="./assets/js/jquery-2.1.1.js"></script>
 	</head>
 	<h1> Welcome Folks Wanna Play Mind Refreshing Games </h1>
 	<body>
@@ -19,6 +20,16 @@
 
 <p>The score will count one point for each frame you manage to "stay alive".</p>
 <canvas id="pageCanvas"></canvas>
+
+<div id="content">
+			<h2>jQuery Chess Game</h2>
+			<div id="game"></div>
+			<script>
+				$(document).ready(function(){
+					$("#game").chess();
+				});
+			</script>
+		</div>
 		
 	</body>
 	<footer>
@@ -27,6 +38,7 @@
 <script src="./assets/js/processing.js"></script>
 <script src="./assets/js/source.js"></script>
 <script src="./assets/js/trygame_score.js"></script>
+<script src="./assets/js/jquery.chess.min.js"></script>
 <script type="application/javascript">
    var canvas = document.getElementById("pageCanvas");
    var processingInstance = new Processing(canvas, jsMain);
