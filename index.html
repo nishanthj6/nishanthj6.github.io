@@ -1,13 +1,35 @@
-<!DOCTYPE html><html><head><title>Paddle Ball</title></head>
-<h1> Welcome Folks Wanna Play Paddle Ball </h1>
-<body><canvas id="pageCanvas"></canvas></body>
-<footer>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Paddle Ball</title>
+		
+		<link rel="stylesheet" type="text/css" href="./assets/css/trygame_score.css">
+	</head>
+	<h1> Welcome Folks Wanna Play Mind Refreshing Games </h1>
+	<body>
+		
+		<br/>
+		<div style="text-align:center;width:480px;">
+		  <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
+		  <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
+		  <button onmousedown="moveright()" onmouseup="clearmove()" ontouchstart="moveright()">RIGHT</button><br><br>
+		  <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
+		</div>
+
+<p>The score will count one point for each frame you manage to "stay alive".</p>
+<canvas id="pageCanvas"></canvas>
+		
+	</body>
+	<footer>
         <small>&copy; Copyright 2019, Nishanth</small>
-</footer>
+	</footer>
 <script src="./assets/js/processing.js"></script>
 <script src="./assets/js/source.js"></script>
+<script src="./assets/js/trygame_score.js"></script>
 <script type="application/javascript">
    var canvas = document.getElementById("pageCanvas");
    var processingInstance = new Processing(canvas, jsMain);
+   startGame();
 </script>
 </html>
