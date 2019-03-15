@@ -7,10 +7,9 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/trygame_score.css">
 		<script src="./assets/js/jquery-2.1.1.js"></script>
 	</head>
-	<h1> Welcome Folks Wanna Play Mind Refreshing Games </h1>
+	<!-- <h1> Welcome Folks Wanna Play Mind Refreshing Games </h1> -->
 	<body>
 		
-		<br/>
 		<div style="text-align:center;width:480px;">
 		  <button onmousedown="moveup()" onmouseup="clearmove()" ontouchstart="moveup()">UP</button><br><br>
 		  <button onmousedown="moveleft()" onmouseup="clearmove()" ontouchstart="moveleft()">LEFT</button>
@@ -18,10 +17,11 @@
 		  <button onmousedown="movedown()" onmouseup="clearmove()" ontouchstart="movedown()">DOWN</button>
 		</div>
 
-<p>The score will count one point for each frame you manage to "stay alive".</p>
-<canvas id="pageCanvas"></canvas>
+		<p>The score will count one point for each frame you manage to "stay alive".</p>
+		<br/>
+		<canvas id="pageCanvas"></canvas>
 
-<div id="content">
+		<div id="content">
 			<h2>jQuery Chess Game</h2>
 			<div id="game"></div>
 			<script>
